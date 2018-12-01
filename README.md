@@ -10,7 +10,7 @@ Decorate your React component and get notified when its dimensions change.
 
 React-measurable is compatible with React 16.3 and React strict mode since it uses the new `createRef` API.
 
-It also depends on [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill) for browsers that don't support the ResizeObserver. The performance depends entirely on the polyfill performance.
+It also depends on [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill) for browsers that don't support the ResizeObserver API (non-Chrome). The performance depends entirely on the polyfill performance.
 
 ## Usage
 
