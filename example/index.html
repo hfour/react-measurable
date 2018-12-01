@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>React Measurable Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 50%;
+        min-width: 1000px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>React-Measurable Example</h1>
+      <h3>Get notified when your decorated component changes dimensions!</h3>
+      <p>
+        The grey container is a flex container with "flex-wrap" set to "wrap".
+        Each flex child has a minimum width of 30px and displays its current
+        width in pixels. The slider controls the flex container's width in
+        percent relative to its parent.
+      </p>
+    </div>
+    <div id="root"></div>
+    <script src="index.tsx"></script>
+  </body>
+</html>
