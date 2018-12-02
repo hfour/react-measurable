@@ -12,6 +12,10 @@ React-measurable is compatible with React 16.3 and React strict mode since it us
 
 It also depends on [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill) for browsers that don't support the ResizeObserver API (non-Chrome). The performance depends entirely on the polyfill performance.
 
+## Demo
+
+https://hfour.github.io/react-measurable/
+
 ## Usage
 
 1. Decorate your component with `@measurable`.
