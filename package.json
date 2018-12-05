@@ -1,6 +1,6 @@
 {
   "name": "react-measurable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get notified when your React component changes dimensions",
   "main": "build/index.js",
   "types": "build/index.d.ts",
