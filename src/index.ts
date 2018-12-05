@@ -1,5 +1,5 @@
-import * as React from "react";
-import ResizeObserver from "resize-observer-polyfill";
+import * as React from 'react';
+import ResizeObserver from 'resize-observer-polyfill';
 
 export type IReactComponent<P> =
   | React.FunctionComponentFactory<P>
@@ -9,20 +9,17 @@ export type IReactComponent<P> =
 export interface MeasurableProps extends React.Attributes {
   observeResize?: <T extends Element>(
     ref: React.RefObject<T>,
-    callback: (rect: DOMRectReadOnly, target: T) => void
+    callback: (rect: DOMRectReadOnly, target: T) => void,
   ) => void;
 }
 
-export function measurable<T extends IReactComponent<MeasurableProps>>(
-  Component: T
-) {
+export function measurable<T extends IReactComponent<MeasurableProps>>(Component: T) {
   const displayName =
-    "measurable-" +
-    (((Component as unknown) as React.ComponentClass<MeasurableProps>)
-      .displayName ||
+    'measurable-' +
+    (((Component as unknown) as React.ComponentClass<MeasurableProps>).displayName ||
       ((Component as unknown) as React.ComponentClass<MeasurableProps>).name ||
       (Component.constructor && Component.constructor.name) ||
-      "Unknown");
+      'Unknown');
 
   class MeasurableComponent extends React.Component<MeasurableProps> {
     static displayName = displayName;
@@ -42,7 +39,7 @@ export function measurable<T extends IReactComponent<MeasurableProps>>(
 
     private observeResize = <T extends Element>(
       ref: React.RefObject<T>,
-      callback: (rect: DOMRectReadOnly, target: T) => void
+      callback: (rect: DOMRectReadOnly, target: T) => void,
     ) => {
       this._obtainedChildRef = ref;
       this._obtainedListener = callback;
