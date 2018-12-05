@@ -2,15 +2,14 @@
   "name": "react-measurable",
   "version": "1.0.0",
   "description": "Get notified when your React component changes dimensions",
-  "main": "dist/index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "repository": "https://github.com/hfour/react-measurable",
   "author": "skid <jordanovskid@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@types/react": "^16.7.10",
-    "@types/react-dom": "^16.0.11",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "@types/react": "^16.0.0",
+    "react": "^16.0.0",
     "resize-observer-polyfill": "^1.5.0"
   },
   "devDependencies": {
@@ -20,10 +19,15 @@
     "typescript": "^3.2.1"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/parcel serve -d build example/index.html",
-    "build": "./node_modules/.bin/tsc -p tsconfig.production.json"
-  }
+    "dev": "parcel serve -d build example/index.html",
+    "build": "tsc -p tsconfig.json"
+  },
+  "bugs": {
+    "url": "https://github.com/hfour/react-measurable/issues"
+  },
   "files": [
-    "build"
+    "build/index.js",
+    "build/index.d.ts"
   ],
+  "homepage": "https://github.com/hfour/react-measurable#readme"
 }

@@ -3,3 +3,5 @@ build
 yarn-error.log
 .cache
 .vscode
+yarn.lock
+build/

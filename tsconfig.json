@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./build",
-    "sourceMap": true,
+    "sourceMap": false,
     "module": "none",
     "moduleResolution": "node",
     "jsx": "react",
@@ -14,13 +14,9 @@
     "target": "es6",
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "declaration": true
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "example/**/*.ts",
-    "example/**/*.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["build", "node_modules", ".git", ".vscode"]
 }
