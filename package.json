@@ -23,4 +23,7 @@
     "dev": "./node_modules/.bin/parcel serve -d build example/index.html",
     "build": "./node_modules/.bin/tsc -p tsconfig.production.json"
   }
+  "files": [
+    "build"
+  ],
 }

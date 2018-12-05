@@ -1,7 +1,0 @@
-node_modules
-build
-example
-yarn.lock
-yarn-error.log
-.cache
-.vscode
